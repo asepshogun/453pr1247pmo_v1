@@ -1,5 +1,5 @@
-<div ng-controller="HomeController">
-{{token}}
+<div ng-controller="HomeController"  ng-init="loadFeeds()">
+<!-- {{token}} -->
 <ul>
     <li ng-repeat="grt in greeting">
         <!-- <span>{{grt.timings}}</span> -->
