@@ -1,1 +1,16 @@
-home
+<div ng-controller="HomeController">
+{{token}}
+<ul>
+    <li ng-repeat="grt in greeting">
+        <!-- <span>{{grt.timings}}</span> -->
+        <p>Imsak {{grt.timings.Imsak}}</p>
+        <p>Subuh {{grt.timings.Fajr}}</p>
+        <p>Terbit {{grt.timings.Sunrise}}</p>
+        <p>Dzuhur {{grt.timings.Dhuhr}}</p>
+        <p>Ashar {{grt.timings.Asr}}</p>
+        <p>Terbenam {{grt.timings.Sunset}}</p>
+        <p>Magrib {{grt.timings.Maghrib}}</p>
+        <p>Isya {{grt.timings.Isha}}</p>
+    </li>
+</ul>
+</div>
