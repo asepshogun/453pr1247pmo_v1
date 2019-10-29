@@ -1,0 +1,50 @@
+
+<div data-page="calendar" class="page" ng-controller="CalendarCtrl">
+  <div class="navbar">
+    <div class="navbar-inner">
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="content-block">
+      <p>Calendar is a touch optimized component that provides an easy way to handle dates.</p>
+    </div>
+    <div class="content-block-title">Default setup</div>
+    <div class="list-block">
+      <ul>
+        <li>
+          <div class="item-content">
+            <div class="item-inner">
+              <div class="item-input">
+                <input type="text" placeholder="Your birth date" readonly="readonly" id="ks-calendar-default"/>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="list-block sortable">
+      <ul>
+        <li ng-repeat="grt in greeting">
+          <div class="item-content">
+            <div class="item-media"><i class="icon icon-f7"></i></div>
+            <div class="item-inner"> 
+              <div class="item-title">
+                <p>Imsak {{grt.timings.Imsak}}</p>
+                <p>Subuh {{grt.timings.Fajr}}</p>
+                <p>Terbit {{grt.timings.Sunrise}}</p>
+                <p>Dzuhur {{grt.timings.Dhuhr}}</p>
+                <p>Ashar {{grt.timings.Asr}}</p>
+                <p>Terbenam {{grt.timings.Sunset}}</p>
+                <p>Magrib {{grt.timings.Maghrib}}</p>
+                <p>Isya {{grt.timings.Isha}}</p>
+              </div>
+              <div class="item-after">Solat</div>
+            </div>
+          </div>
+          <div class="sortable-handler"></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+

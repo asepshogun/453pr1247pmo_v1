@@ -1,0 +1,54 @@
+{
+  "name": "framework7.angular",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashvin777/framework7.angular"
+  },
+  "description": "Full Featured Mobile HTML Framework For Building iOS & Android Apps using AngularJS and Framework7",
+  "version": "2.1",
+  "author": "Ashvin Suthar",
+  "homepage": "",
+  "keywords": [
+    "mobile",
+    "framework",
+    "ios 7",
+    "ios7",
+    "ios8",
+    "ios 8",
+    "iphone",
+    "ipad",
+    "apple",
+    "phonegap",
+    "native",
+    "touch",
+    "appstore",
+    "app",
+    "f7",
+    "material",
+    "android",
+    "google",
+    "googleplay"
+  ],
+  "scripts": [
+    "dist/framework7.angular.hook.js"
+  ],
+  "main": "dist/",
+  "license": [
+    "MIT"
+  ],
+  "ignore": [
+    ".*",
+    "build",
+    "custom",
+    "kitchen-sink/",
+    "gulpfile.js",
+    "apps",
+    "node_modules",
+    "package.json"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.7",
+    "jquery": "^3.0.0",
+    "framework7": "^1.6.5"
+  }
+}
