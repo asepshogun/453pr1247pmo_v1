@@ -1,0 +1,71 @@
+
+<div data-page="builderform" class="page" ng-controller="builderformCtrl">
+  <div class="navbar">
+    <div class="navbar-inner">
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="content-block">
+      <p>Form Builder</p>
+    </div>
+    <div class="content-block-title">Generate form builder</div>
+    <div class="list-block">
+      <ul>
+        <li>
+          <div class="item-content">
+            <div class="item-media"><i class="icon icon-f7"></i></div>
+            <div class="item-inner">
+              <div class="item-input">
+                <input type="text" placeholder="Your birth date" readonly="readonly" id="ks-calendar-default"/>
+              </div>
+              <div class="item-after">Solat</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="list-block">
+      <ul>
+        <li ng-repeat="item in inputs">
+          <!-- <div class="item-content"> -->
+            <div class="block grid-resizable-demo">
+              <div class="row">
+                <div class="col" style="min-width: 100px">
+                  <input type="text" placeholder="Attribute Name" resizable />
+                  <div class="item-inner">
+                    <div class="item-title item-label">Resizable</div>
+                    <div class="item-input-wrap">
+                      <textarea class="resizable" placeholder="Bio"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="col" style="min-width: 100px">
+                  <!-- <li> -->
+                    <a class="item-link smart-select smart-select-init" data-open-in="popover">
+                      <select name="superhero" multiple>
+                        <option value="Batman" selected>Batman</option>
+                        <option value="Superman">Superman</option>
+                        <option value="Hulk">Hulk</option>
+                        <option value="Spiderman">Spiderman</option>
+                        <option value="Ironman">Ironman</option>
+                        <option value="Thor">Thor</option>
+                        <option value="Wonder Woman">Wonder Woman</option>
+                      </select>
+                      <!-- <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Super Hero</div>
+                        </div>
+                      </div> -->
+                    </a>
+                  <!-- </li> -->
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->
+        </li>
+      </ul>
+     <button ng-click="addfield()">Add field</button>
+    </div>
+  </div>
+</div>
+
